@@ -1,0 +1,262 @@
+/* RU Notes 2016 (C) All Rights Reserved. 
+
+/****GLOBAL MULTIPLE PAGE RULES *******************************************************************/
+
+
+/****HEDER MENU RULSES ****************************/
+
+.headerDiv {
+    background:#D21034;
+    color:#FFFFFF;/*white*/
+    margin-bottom:0;
+}
+.headerDiv a{
+	color:#ffffff !important;/*white*/
+}
+.headerDiv a:hover{
+	background:;
+	color:#000000 !important;/*black*/
+}
+/*Might affect other elements with .active fix later*/
+.active a:hover{
+	color:#3366CC !important;/*blue*/
+} 
+
+
+/*Need to spell properlly remove these w/media query @ smaller break point*/ 
+.hederItemBorderLeft{
+	border-left: solid 1px black !important;
+}
+.hederItemBorderBoth{
+	border-left: solid 1px black !important;
+	border-right: solid 1px black !important;
+}
+.hederItemBorderRight{
+	border-right: solid 1px black !important;
+}
+
+
+/****FOOTER NAV MENU RULES ****************************/
+.footerNav{
+	background-color:#444444;/*gray*/
+	padding:35px 0;
+	color:#ffffff;/*white*/
+}
+.footerNav .container-fluid{
+	width:85%;
+}
+.footerNav h4{
+	color:#ffcc00;/*yellow*/
+	font-weight:bold;
+	font-size:2.0rem;
+}
+.footerNav a{
+	color:#ffffff;/*white*/
+}
+.footerNav a:hover{
+	text-decoration: none;
+	color:#3366CC ;/*blue*/
+}
+
+/****CREDITS NAV RULSES ****************************/
+.creditsNav{
+	background-color:#000000;/*black*/
+	color:#ffffff; /*white*/
+	padding: 20px 0 0 0;
+}
+.creditsNav a{
+	color:#ffcc00;/*yellow*/
+}
+.creditsNav p{
+	padding: 0px 5% 10px 5%;
+}
+/**************************************************************************************************/
+
+
+
+
+/*****UPLOADPAGE RULES ****************************************************************************/
+#uploadsTab .jumbotron{
+	background-color:#000000 ;/*black*/
+	padding:75px 5%;
+	margin-bottom: 0px;
+	color:white;
+}
+#uploadsTab .filesLogoDiv{
+	background-image: url(fileLogo.png);
+	width:300px;
+	height:150px;
+	margin:0px auto;
+}
+#uploadsTab .legalInfo{
+	background-color: #E0DABA;/*brown*/
+	padding:50px 6%;
+	font-size:.9em;
+}
+#uploadsTab .formSection{
+	padding:15px 0px 55px 0px;
+}
+#uploadsTab .formItem{
+	margin-bottom: 20px;
+}
+#uploadsTab .formButtonItem{
+	margin-left:auto;
+	margin-right:auto;
+}
+#uploadsTab .fg2{
+	border-bottom: 2px solid #e8e8e8;
+}
+#notesFile {
+	display:none !important;
+}
+
+
+
+/*****STUDY-RESOURSES PAGE RULES ******************************************************************/
+.thumbnail{
+	height:180px;
+	background-color: gray;
+
+}
+#study-resourses .formSection{
+	padding:15px 0px 55px 0px;
+}
+#study-resourses .formItem{
+	margin-bottom: 20px;
+}
+#study-resourses .formButtonItem{
+	margin-left:auto;
+	margin-right:auto;
+}
+#study-resourses .filterFormGroup{
+	border-bottom: 2px solid #e8e8e8;
+	padding:15px 0px !important;
+}
+.newsfeedItem{
+	border: solid 1px black;
+	background-color:gray;
+	min-height: 300px;
+	margin: 10px;
+}
+
+
+
+/*****SIGN UP 1- PAGE RULES ******************************************************************/
+#signUpPage .orDiv{
+	margin-top: 10px;
+	margin-bottom:;
+	padding-top:5px;
+	padding-bottom:;
+}
+
+#signUpPage .orDiv small{
+    width: 40px;
+    color: #aaa;
+}
+
+#signUpPage .flatTextInput{
+	padding-top:24px;
+	padding-bottom:16px;
+	margin-bottom:8px;
+
+	border-color: #ddd !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    font-family: "Open Sans",helvetica,arial,sans-serif;
+    color: #3e3e3e;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 16px !important;
+    padding: 1.5em 0em 1em !important;
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 0.5em !important;
+}
+
+#signUpPage .fatBtn{
+	font-size:15px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+#signUpPage .secondButton{
+	margin-top:15px;
+}
+
+#signUpPage .terms{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+
+
+/*****SIGN UP 2- PAGE RULES ******************************************************************/
+
+#signUpPage2 .flatTextInput{
+	padding-bottom:16px;
+
+	border-color: #ddd !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    font-family: "Open Sans",helvetica,arial,sans-serif;
+    color: #3e3e3e;
+    font-size: 16px !important;
+    padding: 1.5em 0em 1em !important;
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 0.5em !important;
+}
+
+#signUpPage2 .flatSelectInput{
+	padding-bottom:;
+
+	border-color: #ddd !important;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+    font-family: "Open Sans",helvetica,arial,sans-serif;
+    color: #3e3e3e;
+    font-size: 16px !important;
+    padding:0em 0em 0em 0em !important;
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 0.5em !important;
+}
+
+#signUpPage2 .fatBtn{
+	font-size:15px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+#signUpPage2 .terms{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+
+
+/*****Profile- PAGE RULES ******************************************************************/
+.matchBackground{
+	background-color: black !important;
+}
+.contentPanel{
+	margin-top:20px;
+	margin-bottom:60px;
+}
+.sideMenu{
+	padding-right:0px !important;
+	padding-left:;
+}
+.mainContent{
+	padding-left: 35px !important;
+	border-left: solid 1px black;
+	margin-left: 0px !important;
+}
+.profileContainer{
+	margin-left:0px !important;
+	margin-right:0px !important;
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+/**********OFF CANVAS CSS***************/
+

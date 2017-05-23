@@ -1,0 +1,395 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>RU Notes · Better grades begin here </title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<!-- Personal customization of website -->
+	<link href="css/ru-notes.css" rel="stylesheet">
+	<!--Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body id="uploadsPage">
+
+	
+	<!-- Header -->
+	<div class = "navbar navbar-inverse navbar-static-top headerDiv"> 
+		<div class = "container headerDiv">
+ 
+			<!--Collasped Menu Content-->
+			<div class="navbar-header headerDiv" >
+				<a href="index.html" ><img src ="images/run-logo.png"></a>
+
+				<botton type="botton" class="navbar-toggle" data-toggle="collapse" 
+				data-target=".navHeaderCollapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</botton>	
+			</div>
+
+			<!--Uncollasped Menu Content-->
+			<div class="collapse navbar-collapse navHeaderCollapse headerDiv">
+				
+				<ul class ="nav navbar-nav navbar-left">
+					<li class=" hederItemBorderLeft"><a href="study-resources.html">Study Resources</a></li>
+					<li class=" hederItemBorderBoth active"><a href="uploads.html">Uploads</a></li>
+				</ul>
+				
+				<ul class ="nav navbar-nav navbar-right">
+					<li class=" hederItemBorderBoth"><a href="login.html">Login</a></li>
+					<li class=" hederItemBorderRight"><a href="signup.html">Sign Up</a></li>
+				</ul>				
+			</div> 
+		
+		</div>
+	</div>
+	
+
+	<!-- Main Section --> 
+    <div class="jumbotron">
+      	<div class="conatainer text-center">
+        	<h1>Upload your documents</h1>
+        	
+        	<p>
+        		Join the on line collaborative community at Rutgers university and share notes, 
+        		study resources or test prep materials so that together we can all achieve better 
+        		grades.
+        	</p>
+      	</div>
+    </div>
+
+
+	<div class="container formSection" >
+
+		<form method="post" acition ="http://www.example.org/register">
+			<!--<div class="form-group">
+				<div class="container">
+					<div class="row">
+						<h3 class="col-xs-12">1. Select a file to upload</h3>
+						
+						<div class ="row">
+							<img src="images/pdfFile.png" class="col-xs-4"/>
+							<img src="images/txtFile.png" class="col-xs-4"/>
+							<img src="images/imgFile.png" class="col-xs-4"/>
+						<div>
+						
+						<p class="text-center col-xs-9">We accept .pdf, .txt, .jpeg </p>
+					
+						<input class="displayNone col-xs-12 col-sm-12" id="notesFile" type="file" 
+						name="notesFile"/>
+
+						<div class="col-xs-12 col-sm-6 col-m-5  formButtonItem" >
+							<input type="button" value ="Select a file to Upload" 
+							class="btn btn-primary btn-block col-xs-12 col-sm-4" id="notesFileButton"/>
+						</div>
+					
+					</div>
+				</div>			
+			</div>-->	
+
+			<div class="form-group fg2">
+				<div class="container">
+					<div class="row">
+						<!--<img src="images/fileLogo.png" width="300px" class=""/>  Make 300px by 150px-->
+						<div class="filesLogoDiv"></div>
+						<h3 class="text-center col-xs-12">Label & Select Your File </h3>
+						
+						<!--<label for="docTitle"> Document Title</label>-->
+						<div class="col-xs-12 col-sm-3 formItem" >
+							<input type="text" id="docTitle" name="docTitle" class="col-xs-12 col-sm-4 form-control" 
+							placeholder="Document Title"/>
+						</div>
+
+
+						<!--<label for="department-selected">Department</label>-->
+						<div class="col-xs-12 col-sm-3 formItem" >
+							<select id="department-selected" name="department" placeholder="Department" 
+							class="form-control" >
+								<option value ="">Departments</option>
+								<option value ="010">ACCOUNTING (010)</option>
+								<option value ="011">ADMINISTRATIVE STUDIES (011)</option>
+								<option value ="013">AFRICAN, M.EAST. & S.ASIAN LANG & LIT (013)</option>
+								<option value ="014">AFRICANA STUDIES (014)</option>
+								<option value ="020">AGRICULTURE AND FOOD SYSTEMS (020)</option>
+								<option value ="050">AMERICAN STUDIES (050)</option>
+								<option value ="067">ANIMAL SCIENCE (067)</option>
+								<option value ="070">ANTHROPOLOGY (070)</option>
+								<option value ="074">ARABIC LANGUAGES (074)</option>
+								<option value ="078">ARMENIAN (078)</option>
+								<option value ="080">ART (080)</option>
+								<option value ="082">ART HISTORY (082)</option>
+								<option value ="090">ARTS AND SCIENCES (090)</option>
+								<option value ="098">ASIAN STUDIES (098)</option>
+								<option value ="105">ASTROPHYSICS (105)</option>
+								<option value ="115">BIOCHEMISTRY (115)</option>
+								<option value ="117">BIOENVIRONMENTAL ENGINEERING (117)</option>
+								<option value ="119">BIOLOGICAL SCIENCES (119)</option>
+								<option value ="125">BIOMEDICAL ENGINEERING (125)</option>
+								<option value ="126">BIOTECHNOLOGY (126)</option>
+								<option value ="136">BUSINESS ANALYTICS AND INFORMATION TECH (136)</option>
+								<option value ="140">BUSINESS LAW (140)</option>
+								<option value ="146">CELL BIO & NEURO SCI (146)</option>
+								<option value ="155">CHEMICAL AND BIOCHEMICAL ENGINEERING (155)</option>
+								<option value ="158">CHEMICAL BIOLOGY (158)
+								<option value ="160">CHEMISTRY (160)</option>
+								<option value ="165">CHINESE (165)</option>
+								<option value ="175">CINEMA STUDIES (175)</option>
+								<option value ="180">CIVIL AND ENVIROMENTAL ENGINEERING (180)</option>
+								<option value ="185">COGNITIVE SCIENCES (185)</option>
+								<option value ="189">COMMUNICATION AND INFORMATION (189)</option>
+								<option value ="190">CLASSICS (190)</option>
+								<option value ="192">COMMUNICATION (192)</option>
+								<option value ="193">COMMUNITY HEALTH OUTREACH (193)</option>
+								<option value ="195">COMPARATIVE LITERATURE (195)</option>
+								<option vlaue ="198">COMPUTER SCIENCE (198)</option>
+								<option vlaue ="202">CRIMINAL JUSTICE (202)</option>
+								<option vlaue ="203">DANCE (203)</option>
+								<option vlaue ="206">DANCE - MGSA (206)</option>
+								<option vlaue ="207">DANCE EDUCATION (207)</option>
+								<option vlaue ="211">DIGITAL FILMMAKING (211)</option>
+								<option vlaue ="216">ECOLOGY, EVOLUTION AND NATURAL RESOURCES (216)</option>
+								<option vlaue ="220">ECONOMICS (220)</option>
+								<option vlaue ="300">EDUCATION (300)</option>
+								<option vlaue ="332">ELECTRICAL AND COMPU. (332)</option>
+								<option vlaue ="351">ENGLISH: CREATIVE WRITING (351)</option>
+								<option vlaue ="354">ENGLISH - FILM STUDIES (354)</option>
+								<option vlaue ="355">ENGLISH: COMP & WRITING (355)</option>
+								<option vlaue ="356">ENGLISH AS A SECOND LANGUAGE (356)</option>
+								<option vlaue ="358">ENGLISH: LITERATURE (358)</option>
+								<option vlaue ="359">ENGLISH: THEORIES AND METHODS (359)</option>
+								<option vlaue ="370">ENTOMOLOGY (370)</option>
+								<option vlaue ="382">ENTREPRENEURSHIP (382)</option>
+								<option vlaue ="374">ENVIRON. POLICY, INSTITUTIONS & BEHAVIOR (374)</option>
+								<option vlaue ="015">ENVIRONMENTAL AND BIOLOGICAL SCIENCES (015)</option>
+								<option vlaue ="373">ENVIRONMENTAL AND BUSINESS ECONOMICS (373)</option>
+								<option vlaue ="573">ENVIRONMENTAL PLANNING AND DESIGN (573)</option>
+								<option vlaue ="372">ENVIRONMENTAL RESOURCES (372)</option>
+								<option vlaue ="375">ENVIRONMENTAL SCIENCES (375)</option>
+								<option vlaue ="360">EUROPEAN STUDIES (360)</option>
+								<option vlaue ="001">EXCHANGE (001)</option>
+								<option vlaue ="377">EXERCISE SCIENCE AND SPORT STUDIES (377)</option>
+								<option vlaue ="390">FINANCE (390)</option>
+								<option vlaue ="400">FOOD SCIENCE (400)</option>
+								<option vlaue ="420">FRENCH (420)</option>
+								<option vlaue ="440">GENERAL ENGINEERING (440)</option>
+								<option vlaue ="447">GENETICS (447)</option>
+								<option vlaue ="450">GEOGRAPHY (450)</option>
+								<option vlaue ="460">GEOLOGICAL SCIENCES (460)</option>
+								<option vlaue ="470">GERMAN (470)</option>
+								<option vlaue ="490">GREEK (490)</option>
+								<option vlaue ="489">GREEK, MODERN (489)</option>
+								<option vlaue ="501">HEALTH ADMINISTRATION (501)</option>
+								<option vlaue ="505">HINDI (505)</option>
+								<option vlaue ="506">HISTORY GENERAL/COMPARATIVE (506)</option>
+								<option vlaue ="508">HISTORY, AFR ASIA LATIN AM (508)</option>
+								<option vlaue ="512">HISTORY, AMERICAN (512)</option>
+								<option vlaue ="510">HISTORY, EUROPEAN (510)</option>
+								<option vlaue ="533">HUMAN RESOURCE MANAGEMENT (533)</option>
+								<option vlaue ="540">INDUSTRIAL AND SYSTEMS ENGINEERING (540)</option>
+								<option vlaue ="547">INFORMATION TECHNOLOGY AND INFORMATICS (547)</option>
+								<option vlaue ="554">INTERDISCIPLINARY - SEBS (554)</option>
+								<option vlaue ="556">INTERDISCIPLINARY STUDIES - ARTS & SCI (556)</option>
+								<option vlaue ="522">INTERNATIONAL BUSINESS AND BUSINESS (522)</option>
+								<option vlaue ="560">ITALIAN (560)</option>
+								<option vlaue ="565">JAPANESE (565)</option>
+								<option vlaue ="563">JEWISH STUDIES (563)</option>
+								<option vlaue ="567">JOURNALISM AND MEDIA STUDIES (567)</option>
+								<option vlaue ="574">KOREAN (574)</option>
+								<option vlaue ="575">LABOR STUDIES (575)</option>
+								<option vlaue ="550">LANDSCAPE ARCHITECTURE (550)</option>
+								<option vlaue ="580">LATIN (580)</option>
+								<option vlaue ="590">LATIN AMERICAN STUDIES (590)</option>
+								<option vlaue ="595">LATINO AND HISPANIC CARIBBEAN STUDIES (595)</option>
+								<option vlaue ="607">LEADERSHIP SKILLS (607)</option>
+								<option vlaue ="615">LINGUISTICS (615)</option>
+								<option vlaue ="617">LITERATURE AND LANGUAGE (617)</option>
+								<option vlaue ="620">MANAGEMENT (620)</option>
+								<option vlaue ="628">MARINE AND COASTAL SCIENCES (628)</option>
+								<option vlaue ="630">MARKETING (630)</option>
+								<option vlaue ="635">MATERIALS SCIENCE AND ENGINEERING (635)</option>
+								<option vlaue ="640">MATHEMATICS (640)</option>
+								<option vlaue ="650">MECHANICAL AND AEROSPACE ENGINEERING (650)</option>
+								<option vlaue ="660">MEDICAL TECHNOLOGY (660)</option>
+								<option vlaue ="667">MEDIEVAL STUDIES (667)</option>
+								<option vlaue ="670">METEOROLOGY (670)</option>
+								<option vlaue ="680">MICROBIOLOGY (680)</option>
+								<option vlaue ="685">MIDDLE EASTERN STUDIES (685)</option>
+								<option vlaue ="690">MILITARY EDUCATION, AIR FORCE (690)</option>
+								<option vlaue ="691">MILITARY EDUCATION, ARMY (691)</option>
+								<option vlaue ="692">MILITARY EDUCATION, NAVY (692)</option>
+								<option vlaue ="694">MOL BIO & BIOCHEM (694)</option>
+								<option vlaue ="700">MUSIC (700)</option>
+								<option vlaue ="701">MUSIC, APPLIED (UNITS 07 AND 08) (701)</option>
+								<option vlaue ="705">NURSING (705)</option>
+								<option vlaue ="709">NUTRITIONAL SCIENCES (709)</option>
+								<option vlaue ="713">ORGANIZATIONAL LEADERSHIP (713)</option>
+								<option vlaue ="715">PHARMACEUTICAL CHEMISTRY (715)</option>
+								<option vlaue ="721">PHARMACEUTICS (721)</option>
+								<option vlaue ="718">PHARMACOLOGY AND TOXICOLOGY (718)</option>
+								<option vlaue ="720">PHARMACY (720)</option>
+								<option vlaue ="725">PHARMACY PRACTICE AND ADMINISTRATION (725)</option>
+								<option vlaue ="730">PHILOSOPHY (730)</option>
+								<option vlaue ="745">PHYSICIAN ASSISTANT (745)</option>
+								<option vlaue ="750">PHYSICS (750)</option>
+								<option vlaue ="762">PLANNING AND PUBLIC POLICY (762)</option>
+								<option vlaue ="776">PLANT SCIENCE (776)</option>
+								<option vlaue ="775">POLICY, HEALTH, AND ADMINISTRATION (775)</option>
+								<option vlaue ="787">POLISH (787)</option>
+								<option vlaue ="790">POLITICAL SCIENCE (790)</option>
+								<option vlaue ="810">PORTUGUESE (810)</option>
+								<option vlaue ="813">PROFESSIONAL DEVELOPMENT (813)</option>
+								<option vlaue ="830">PSYCHOLOGY (830)</option>
+								<option vlaue ="832">PUBLIC HEALTH (832)</option>
+								<option vlaue ="833">PUBLIC POLICY (833)</option>
+								<option vlaue ="840">RELIGION (840)</option>
+								<option vlaue ="860">RUSSIAN (860)</option>
+								<option vlaue ="880">SCIENCE, TECHNOLOGY AND SOCIETY (880)</option>
+								<option vlaue ="902">SEBS INTERNSHIP (902)</option>
+								<option vlaue ="888">SEXUALITIES STUDIES (888)</option>
+								<option vlaue ="904">SOCIAL JUSTICE (904)</option>
+								<option vlaue ="910">SOCIAL WORK (910)</option>
+								<option vlaue ="920">SOCIOLOGY (920)</option>
+								<option vlaue ="940">SPANISH (940)</option>
+								<option vlaue ="960">STATISTICS (960)</option>
+								<option vlaue ="959">STUDY ABROAD (959)</option>
+								<option vlaue ="799">SUPPLY CHAIN MANAGEMENT (799)</option>
+								<option vlaue ="956">SWAHILI (956)</option>
+								<option vlaue ="965">THEATER (965)</option>
+								<option vlaue ="966">THEATER ARTS - MGSA (966)</option>
+								<option vlaue ="967">UKRANIAN (967)</option>
+								<option vlaue ="971">URBAN PLANNING (971)</option>
+								<option vlaue ="081">VISUAL ARTS (081)</option>
+								<option vlaue ="988">WOMEN'S & GENDER STUDIES (988)</option>
+								<!--<option value =""></option>-->
+							</select>
+						</div>
+
+						<!--<label for"course-selected">Course</label>-->
+						<div class="col-xs-12 col-sm-3 formItem" >
+							<select id="course-selected" name="course" placeholder="Courses" 
+							class="form-control" disabled>	
+								<option>Courses</option>
+							</select>
+						</div>
+
+						
+
+						<div class="col-xs-12 col-sm-3  formItem" >
+							<input type="button" value ="Select a file to Upload" 
+							class="btn btn-primary btn-block col-xs-12 col-sm-4" id="notesFileButton"/>
+						</div>
+
+						<input class="displayNone col-xs-12 col-sm-4 " id="notesFile" type="file" name="notesFile"/>
+
+					</div>
+				</div>
+			</div> 	
+
+			<div class="form-group">
+				<div class="container">
+					<div class="row">
+							<div class="checkbox col-xs-6 col-sm-9">
+						    	<label>
+						      		<input type="checkbox"> Accept our Terms & Condiions 
+						    	</label>
+						  	</div>
+
+						<div class="col-xs-6 col-sm-3">
+							<input type="submit" class="btn btn-danger btn-block " name="uploadform" 
+							value="Submit Your File">
+						</div>
+					</div>	
+				</div>
+			</div>		
+		</form>
+	</div>	
+	
+	<div class="container-fluid legalInfo"
+		<div class="legalInfo">
+            <p>
+            	By submitting Documents you are representing that: (1) you own the copyrights 
+            	covering the files to be uploaded or have express permission from the copyright 
+            	owners to upload those files; (2) your uploading of the files you have selected will
+            	 not violate any law, regulation or ethics code; and (3) uploading the files to be 
+            	 uploaded will not violate RU Notes<a href="#">Terms of Use.</a>
+            </p>
+
+            <p>
+            	Documents should add value to the RU Notes community. They should be tagged to their
+            	relevant course or subject, can be in any language, and should adhere to all the 
+            	following rules: They should not be blank, duplicates, or have random filler 
+            	content. They should not contain any obscene or offensive material. Users should not
+            	upload copyrighted materials for which they do not own the rights, or have 
+            	permission from the owner. RU Notes reserves the right to remove any uploaded 
+            	content from our site at any time, for any reason in our sole discretion, and 
+            	without notice.
+            </p>
+        </div>
+	</div>
+
+
+	<!-- Footer --> 
+	<nav class="nav navbar-inverse navbar-static-bottom footerNav">
+        <div class="container-fluid"> 
+       		<div class="row">
+       			<div class="col-xs-6 col-sm-4">
+	    			<h4>About Us</h4>
+	      				<li><a href="#">About Us</a></li>
+	      				<li><a href="#">Team</a></li>
+	      				<li><a href="#">Site Map</a></li>
+	  			</div>
+	  			<div class="col-xs-6 col-sm-4">
+	    			<h4>Support</h4>
+	      				<li><a href="#">Contact Us</a></li>
+	      				<li><a href="#">FAQs</a></li>
+	      				<li><a href="#">Feedback</a></li>
+	  			</div>
+	  			<div class="col-xs-6 col-sm-4">
+	    			<h4>Policy</h4>
+	      				<li><a href="#">Terms of Use</a></li>
+	      				<li><a href="#">Privacy Policy</a></li>
+	      				<li><a href="#">Copyright Policy</a></li>
+	  			</div>
+	  		</div>	
+       	</div>
+	</nav>	
+
+	<!-- Credits --> 
+	<nav class="nav navbar-inverse navbar-static-bottom creditsNav">
+        
+        <div class="container-fluid">
+        	<div class="row">
+            	<p class=" col-xs-12 col-sm-6 text-center small">
+       				Copyright © 2016, RU Notes.
+       			</p>
+            	<p class=" col-xs-12 col-sm-6 text-center small">
+            		Ru-Notes was developed by Rutgers students and is not 
+            		sponsored or endorsed by Rutgers University.
+            	</p>
+            </div>	       			
+       	</div> 
+	</nav>	
+
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ru-notes.js"></script>
+</body>
+
+</html>
