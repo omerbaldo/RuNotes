@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block body_block %}
+
+ {% if user.is_authenticated %}
+
+
+	<h2>General Account Settings</h2>
+
+
+
+	<table style="width:100%">
+
+
+		<tr>
+			<td> Name: </td>
+			<td> <i> {{ user.first_name }}  {{ user.last_name }} </i>  </td>
+			<td> <a href= ''>edit</a> </td>
+		</tr>
+		 {% block name_change %} {% endblock %}
+
+
+
+
+
+
+		<tr>
+			<td> User name: </td>
+			<td>  <i> {{ user.username }} </i> </td>
+			<td> <a href= ''>edit</a> </td>
+		</tr>
+		{% block username_change %} {% endblock %}
+
+
+
+
+
+		<tr>
+			<td> Email: </td>
+			<td><i> {{user.email}}</i></td>
+			<td> <a href= ''>edit</a> </td>
+		</tr>
+		{% block email_change %} {% endblock %}
+
+
+
+
+		<tr>
+			<td> Password Change: </td>
+			<td><i> ***********</i></td>
+			<td> <a href= ''>edit</a> </td>
+		</tr>
+		{% block password_change %} {% endblock %}
+
+
+	</table>
+
+
+
+
+
+
+{%else%}
+
+	<h1>Please Login</h1>
+	<li><a href="/accounts/login">Login</a></li>
+
+{%endif%}
+
+
+{% endblock %}
